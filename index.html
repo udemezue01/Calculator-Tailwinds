@@ -7,15 +7,17 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-200 flex items-center justify-center h-screen">
+
+    
   <div class="bg-white p-6 rounded-lg shadow-lg">
     <div id="display" class="mb-4 text-right text-2xl font-bold text-gray-800 border-b border-gray-300 p-2">0</div>
     
     <div class="grid grid-cols-4 gap-2">
       <!-- Calculator buttons -->
-      <button class="bg-gray-300 p-4 rounded text-lg" onclick="clearDisplay()">C</button>
+      <button class="bg-red-600 text-white p-4 rounded text-lg" onclick="clearDisplay()">C</button>
       <button class="bg-gray-300 p-4 rounded text-lg" onclick="appendDisplay('/')">/</button>
       <button class="bg-gray-300 p-4 rounded text-lg" onclick="appendDisplay('*')">*</button>
-      <button class="bg-red-400 p-4 rounded text-lg text-white" onclick="deleteLast()">DEL</button>
+      <button class="bg-red-600 p-4 rounded text-lg text-white" onclick="deleteLast()">DEL</button>
 
       <button class="bg-gray-300 p-4 rounded text-lg" onclick="appendDisplay('7')">7</button>
       <button class="bg-gray-300 p-4 rounded text-lg" onclick="appendDisplay('8')">8</button>
